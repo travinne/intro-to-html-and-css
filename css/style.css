@@ -89,6 +89,7 @@ nav a{
     border-width: 2px;
     border-style: solid;
     padding: 16px;
+    width: fit-content;
 }
 
 .style-white{
@@ -96,49 +97,75 @@ nav a{
     border-color: var(--primary-white);
 }
 
+.style-red{
+    color:var(--tertiary-color);
+    border-color: var(--tertiary-color);
+    }
+.style-red:hover{color: #111;
+    background-color: var(--tertiary-color);
+    font-size: 20px;
+
+}    
+
 .style-white:hover{
     color: #111;
     background-color: var(--primary-white);
+    font-size: 20px;
 }
 .call-to-action{
-    padding: 16px 58px;
+    padding: 16px 48px;
     font-size: 20px;
 }
 
 .gains{
     display: flex;
-    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    margin-top: -40px;
 }
 
-.gain-card{
+.gains-card{
     display: flex;
     flex-direction: column;
-    color: var(--primary-white);
+    color:var(--primary-white) ;
     padding: 48px;
     gap: 16px;
+    h3 {
+        font-size: 56px;
+        font-weight: 700;
+        color: var(--primary-white);
+        p{line-height: 24px;}
+        
+    }
+    p{
+        line-height: 24px;
+
+    }
 }
 
-.gain-card h3{
-    font-size: 56px;
-    font-weight: 700;
-    color: var(--tertiary-color);
-    p{line-height: 24px;}
 
-}
 
-.gain-left{
+
+
+.gains-left{
     background-color:var(--tertiary-color);
     text-align: right;
-    align-items: end;
+    
 }
 
-.gains-right{
+.gains-card{
+    background-color:var(--tertiary-color);
+} 
+
+.gain-right{
     background-color: #111;
+
+
 }
 
 .experience {
     display: flex;
-    padding: 48px;
+    padding: 48px 0px;
     gap: 32px;
     width: 85%;
     margin: auto;
@@ -147,9 +174,50 @@ nav a{
 
 .experience img{
     height: 540px;
+    width: 540px;
+
 }
 
+.experience-work{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    
+}
 
+.experience-work h2{
+    font: size 56px;
+    color:#343a40;
+}
+.experience-work div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 0;
+
+}
+
+.experience-work section{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+   > div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+   i{font-size: 62px;
+    color:var(--tertiary-color);
+    
+}
+
+h4{
+    font-size: 24px;
+    color: #343a40;
+}
+}
 
 
 
